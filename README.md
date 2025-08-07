@@ -278,6 +278,3 @@ This tool is designed to be self-sufficient and user-friendly. All configuration
 
 For best results, ensure your website has clear content about your products/services, and include relevant seed keywords in your configuration.
 
-## License and Usage
-
-This tool is designed for professional SEM campaign planning and can be used for commercial purposes. All generated campaign plans and keyword lists are yours to use in any Google Ads campaigns.
