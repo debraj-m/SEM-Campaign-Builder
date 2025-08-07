@@ -1,0 +1,92 @@
+# SEM Campaign Builder Configuration
+# Set your inputs here and run the application
+
+# Brand Information
+brand:
+  website_url: "https://www.cubehq.ai"  # Your brand website
+  company_name: "Cube HQ"
+  industry: "SaaS/Analytics"
+
+# Competitor Analysis
+competitors:
+  - url: "https://www.looker.com"
+    name: "Looker"
+  - url: "https://www.tableau.com" 
+    name: "Tableau"
+  - url: "https://powerbi.microsoft.com"
+    name: "Power BI"
+  - url: "https://www.sisense.com"
+    name: "Sisense"
+
+# Target Markets
+locations:
+  - "United States"
+  - "Canada"
+  - "United Kingdom"
+
+# Budget Allocation (monthly)
+budget:
+  total: 10000
+  search_ads: 5000      # 50% for Search campaigns
+  shopping_ads: 2000    # 20% for Shopping campaigns  
+  performance_max: 3000 # 30% for Performance Max campaigns
+
+# Keyword Research Settings
+keyword_research:
+  min_search_volume: 500
+  max_keywords_per_source: 150  # Increased for better coverage
+  use_wordstream: false         # WordStream consistently blocked - using alternatives
+  use_google_suggestions: true  # Working with Google Suggest API
+  use_competitor_analysis: true
+  use_google_trends: true       # Enable Google Trends integration
+  use_answer_the_public_style: true  # Enable ATP-style keyword generation
+  
+# Seed Keywords (if website has limited content)
+seed_keywords:
+  - "business intelligence"
+  - "data analytics platform"
+  - "reporting software"
+  - "dashboard tool"
+  - "data visualization"
+  - "analytics software"
+  - "bi tool"
+  - "data platform"
+
+# Business Metrics
+business:
+  average_order_value: 2000  # Monthly subscription value
+  profit_margin: 0.40         # 40% profit margin
+  conversion_rate: 0.03       # 3% conversion rate
+  target_roas: 500           # 500% target ROAS
+
+# Campaign Settings
+campaigns:
+  search:
+    bidding_strategy: "manual_cpc"
+    networks: ["google_search"]
+    ad_rotation: "optimize"
+    
+  shopping:
+    bidding_strategy: "manual_cpc" 
+    priority: "medium"
+    
+  performance_max:
+    bidding_strategy: "maximize_conversions"
+    target_roas: 500
+
+# Export Settings
+export:
+  format: "excel"  # Options: excel, json, csv
+  include_bid_recommendations: true
+  include_performance_projections: true
+  filename_prefix: "SEM_Campaign_Plan"
+
+# Advanced Settings
+advanced:
+  use_ai_analysis: true       # Use LLM for keyword analysis if API key available
+  enable_logging: true
+  headless_browser: true      # Set to false for debugging web scraping
+  rate_limit_delay: 3         # Increased delay for better success rates
+  max_retries: 3              # Number of retries for failed requests
+  use_selenium_fallback: true # Use Selenium when requests fail
+  bypass_ssl_verification: true  # Bypass SSL issues that cause failures

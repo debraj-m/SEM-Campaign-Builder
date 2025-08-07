@@ -1,0 +1,23 @@
+# Python Virtual Environment
+.venv/
+
+# Python Cache
+__pycache__/
+*.py[cod]
+*$py.class
+
+# IDE and Editor files
+.vscode/
+
+# Project specific logs
+*.log
+sem_builder_*.log
+
+# Exported campaign files (optional - remove if you want to track exports)
+exports/*.xlsx
+!exports/README.md
+
+# API keys and sensitive config
+.env
+secrets.yaml
+api_keys.yaml
